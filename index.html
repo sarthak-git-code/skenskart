@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SkensKart - Smart Product Comparison & Customization Tool">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <!-- Primary Meta Tags -->
+    <title>SkensKart | Smart Shopping Tools</title>
+    <meta name="title" content="SkensKart | Smart Shopping Tools">
+    <meta name="description" content="Compare products and customize items with SkensKart's intelligent shopping tools">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skenskart.com/">
+    <meta property="og:title" content="SkensKart | Smart Shopping Tools">
+    <meta property="og:description" content="Compare products and customize items with SkensKart's intelligent shopping tools">
+    <meta property="og:image" content="https://skenskart.com/preview-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://skenskart.com/">
+    <meta property="twitter:title" content="SkensKart | Smart Shopping Tools">
+    <meta property="twitter:description" content="Compare products and customize items with SkensKart's intelligent shopping tools">
+    <meta property="twitter:image" content="https://skenskart.com/preview-image.jpg">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <style>
+      /* Critical CSS for initial load */
+      body {
+        margin: 0;
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: #f5f7fa;
+        color: #333;
+      }
+      
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .loading-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Initial loading spinner -->
+      <div class="loading-spinner">
+        <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="25" cy="25" r="20" stroke="#2874F0" stroke-width="4" fill="none" stroke-dasharray="31.415, 31.415"
+            stroke-dashoffset="0">
+            <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="1s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+    </div>
+    
+    <!-- Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
